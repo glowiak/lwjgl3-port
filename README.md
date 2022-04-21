@@ -1,6 +1,6 @@
-# Minecraft 1.14
+# Minecraft 1.19
 This repo contains
-- Build script to fetch and compile code required to run Minecraft 1.14
+- Build script to fetch and compile code required to run Minecraft 1.19
 - Self-contained launcher script for Minecraft client
 
 
