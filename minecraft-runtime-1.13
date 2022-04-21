@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ROOT=/home/johannes/dev/lwjgl3-port
+ROOT=$(readlink -f $(dirname $0))
 
 LWJGL_JLP_OVRD="${ROOT}/native-libs:${ROOT}/lwjgl3/bin/libs:/usr/local/lib:/usr/lib"
 
@@ -11,7 +11,7 @@ LWJGL_GLFW_OVRD="${ROOT}/lwjgl3/bin/RELEASE/lwjgl-glfw/lwjgl-glfw.jar"
 LWJGL_STB_OVRD="${ROOT}/lwjgl3/bin/RELEASE/lwjgl-stb/lwjgl-stb.jar"
 LWJGL_JEM_OVRD="${ROOT}/lwjgl3/bin/RELEASE/lwjgl-jemalloc/lwjgl-jemalloc.jar"
 
-export JAVA_HOME=/usr/local/openjdk8
+export JAVA_HOME=/usr/local/openjdk17
 
 echo CMD IN: ${@}
 
